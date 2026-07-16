@@ -298,4 +298,716 @@
                 <section id="vault-section" class="relative max-w-6xl mx-auto px-6 py-12 scroll-mt-24">
                     <div class="text-center mb-12">
                         <h2 class="text-2xl font-orbitron font-bold tracking-widest text-sky-400 uppercase">RECOVERED ALIEN TECH VAULT</h2>
-                        <p class="text-xs text-slate-500 font-mono mt-1">SOURCE: CLUSTER Blueprints
+                        <p class="text-xs text-slate-500 font-mono mt-1">SOURCE: CLUSTER Blueprints PROTOCOL</p>
+                    </div>
+
+                    <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                        <div class="space-y-4 lg:col-span-1">
+                            <button onclick="selectArtifact(0)" id="art-btn-0" class="w-full text-left p-5 border rounded transition-all flex items-center gap-4 border-sky-500 bg-sky-500/10">
+                                <i data-lucide="sparkles" class="text-sky-400 w-6 h-6 animate-spin"></i>
+                                <div>
+                                    <span class="text-[10px] font-mono text-slate-500">A-01</span>
+                                    <h4 class="font-orbitron font-bold text-sm tracking-wide text-slate-100">Quantum Fusion Core</h4>
+                                </div>
+                            </button>
+                            <button onclick="selectArtifact(1)" id="art-btn-1" class="w-full text-left p-5 border rounded transition-all flex items-center gap-4 border-slate-800 bg-slate-900/20 hover:border-slate-700">
+                                <i data-lucide="cpu" class="text-purple-400 w-6 h-6"></i>
+                                <div>
+                                    <span class="text-[10px] font-mono text-slate-500">A-02</span>
+                                    <h4 class="font-orbitron font-bold text-sm tracking-wide text-slate-100">Neural Crown</h4>
+                                </div>
+                            </button>
+                            <button onclick="selectArtifact(2)" id="art-btn-2" class="w-full text-left p-5 border rounded transition-all flex items-center gap-4 border-slate-800 bg-slate-900/20 hover:border-slate-700">
+                                <i data-lucide="shield-alert" class="text-red-400 w-6 h-6"></i>
+                                <div>
+                                    <span class="text-[10px] font-mono text-slate-500">A-03</span>
+                                    <h4 class="font-orbitron font-bold text-sm tracking-wide text-slate-100">Gravity Engine</h4>
+                                </div>
+                            </button>
+                        </div>
+
+                        <div class="lg:col-span-2 border border-sky-500/20 bg-slate-950/80 p-8 rounded flex flex-col justify-between min-h-[300px] glow-primary">
+                            <div>
+                                <div class="flex justify-between items-center mb-6">
+                                    <span class="text-xs font-mono text-sky-400 uppercase tracking-widest">ARTIFACT ANALYSIS DATASTREAM</span>
+                                    <span id="art-status" class="text-xs font-mono px-2 py-0.5 bg-sky-500/20 text-sky-300 border border-sky-500/40 rounded">STABLE INTEGRITY</span>
+                                </div>
+                                <h3 id="art-title" class="text-2xl font-orbitron font-bold text-slate-100 tracking-wide mb-3">Quantum Fusion Core</h3>
+                                <p id="art-desc" class="text-sm text-slate-400 leading-relaxed mb-6">Taps zero-point space metrics to harvest continuous infinite electrical current with negligible thermal waste output.</p>
+                            </div>
+                            <div class="border-t border-slate-800 pt-6 grid grid-cols-2 gap-4">
+                                <div>
+                                    <span class="text-[10px] font-mono text-slate-500 block uppercase">Energy Matrix Output</span>
+                                    <span id="art-energy" class="text-lg font-orbitron font-bold text-sky-400">1.24 Yottawatts</span>
+                                </div>
+                                <div>
+                                    <span class="text-[10px] font-mono text-slate-500 block uppercase">Threat Index</span>
+                                    <span class="text-lg font-orbitron font-bold text-purple-400">RESTRICTED_CLASS_5</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- SECTION 7: VIRUS RESEARCH CENTER -->
+                <section class="relative max-w-6xl mx-auto px-6 py-12">
+                    <div class="border border-red-500/20 bg-red-950/5 p-8 rounded-lg glow-danger">
+                        <div class="flex items-center gap-3 mb-8">
+                            <span class="h-3 w-3 rounded-full bg-red-500 animate-ping"></span>
+                            <h2 class="text-xl font-orbitron font-extrabold tracking-widest text-red-500 uppercase">VIRUS PROFILE ANALYSIS (ZVX-9)</h2>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                            <div class="bg-slate-950/80 border border-slate-800 p-6 rounded text-center">
+                                <span class="text-[10px] font-mono text-slate-500 block uppercase mb-2">Infectivity Profile</span>
+                                <span class="text-4xl font-orbitron font-black text-red-500">98.6%</span>
+                            </div>
+                            <div class="bg-slate-950/80 border border-slate-800 p-6 rounded text-center">
+                                <span class="text-[10px] font-mono text-slate-500 block uppercase mb-2">Mortality Outcome</span>
+                                <span class="text-4xl font-orbitron font-black text-red-600">100.0%</span>
+                            </div>
+                            <div class="bg-slate-950/80 border border-slate-800 p-6 rounded text-center">
+                                <span class="text-[10px] font-mono text-slate-500 block uppercase mb-2">Mutation Vectors</span>
+                                <span class="text-4xl font-orbitron font-black text-orange-400">RNA_SYNTH</span>
+                            </div>
+                            <div class="bg-slate-950/80 border border-slate-800 p-6 rounded text-center">
+                                <span class="text-[10px] font-mono text-slate-500 block uppercase mb-2">Antidote Progress</span>
+                                <span class="text-4xl font-orbitron font-black text-emerald-400">89.2%</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- SECTION 8: ASCENSION PROGRAM -->
+                <section class="relative max-w-5xl mx-auto px-6 py-12">
+                    <div class="text-center mb-12">
+                        <h2 class="text-2xl font-orbitron font-bold text-slate-100 tracking-wider">HUMAN BIOLOGICAL OPTIMIZATION PROGRAM</h2>
+                        <p class="text-xs text-slate-500 font-mono uppercase">Ascended Specializations</p>
+                    </div>
+                    <div class="space-y-6">
+                        <div class="border border-slate-800 bg-slate-900/30 p-5 rounded">
+                            <div class="flex justify-between items-center mb-2 font-orbitron text-xs">
+                                <span class="font-bold text-sky-400">TITAN RE-INSPECTOR</span>
+                                <span class="text-slate-400">INTEGRITY: 98%</span>
+                            </div>
+                            <div class="w-full bg-slate-950 h-2 p-0.5 rounded border border-slate-800">
+                                <div class="h-full bg-sky-400 rounded-sm" style="width: 98%;"></div>
+                            </div>
+                            <p class="text-xs text-slate-500 mt-2 font-mono">Augmented muscle matrix and micro-fission bone plating.</p>
+                        </div>
+                        <div class="border border-slate-800 bg-slate-900/30 p-5 rounded">
+                            <div class="flex justify-between items-center mb-2 font-orbitron text-xs">
+                                <span class="font-bold text-sky-400">PHANTOM INTERFERE</span>
+                                <span class="text-slate-400">INTEGRITY: 85%</span>
+                            </div>
+                            <div class="w-full bg-slate-950 h-2 p-0.5 rounded border border-slate-800">
+                                <div class="h-full bg-sky-400 rounded-sm" style="width: 85%;"></div>
+                            </div>
+                            <p class="text-xs text-slate-500 mt-2 font-mono">Chameleon light-bending matrix shields for advanced recon operations.</p>
+                        </div>
+                        <div class="border border-slate-800 bg-slate-900/30 p-5 rounded">
+                            <div class="flex justify-between items-center mb-2 font-orbitron text-xs">
+                                <span class="font-bold text-sky-400">ORACLE ALGORITHMS</span>
+                                <span class="text-slate-400">INTEGRITY: 94%</span>
+                            </div>
+                            <div class="w-full bg-slate-950 h-2 p-0.5 rounded border border-slate-800">
+                                <div class="h-full bg-sky-400 rounded-sm" style="width: 94%;"></div>
+                            </div>
+                            <p class="text-xs text-slate-500 mt-2 font-mono">Direct synapse bridging allows multi-thread galaxy navigation computation.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- SECTION 9: SURVIVOR FACTIONS -->
+                <section class="relative max-w-6xl mx-auto px-6 py-12">
+                    <div class="border-l-4 border-sky-400 pl-4 mb-10">
+                        <h2 class="text-xl font-orbitron font-bold tracking-widest text-slate-100 uppercase">KNOWN ENTITIES MAP</h2>
+                        <p class="text-xs text-slate-500 font-mono">SOCIETAL GROUPS LOCATED ON SURFACE SCAN</p>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                        <div class="border border-slate-800 bg-slate-950/60 p-6 rounded hover:border-sky-400/30 transition-all">
+                            <div class="flex items-center justify-between mb-4 text-sky-400">
+                                <i data-lucide="users" class="w-5 h-5"></i>
+                                <span class="text-[10px] font-mono text-slate-500">14,000 VERIFIED</span>
+                            </div>
+                            <h4 class="font-orbitron font-bold text-sm tracking-wide text-slate-100 mb-2">THE REMNANTS</h4>
+                            <p class="text-xs text-slate-400 leading-relaxed font-sans">Civilian survivors secure inside pressurized subterranean dome colonies.</p>
+                        </div>
+                        <div class="border border-slate-800 bg-slate-950/60 p-6 rounded hover:border-sky-400/30 transition-all">
+                            <div class="flex items-center justify-between mb-4 text-sky-400">
+                                <i data-lucide="shield" class="w-5 h-5"></i>
+                                <span class="text-[10px] font-mono text-slate-500">4,500 ARMORED</span>
+                            </div>
+                            <h4 class="font-orbitron font-bold text-sm tracking-wide text-slate-100 mb-2">IRON DIVISION</h4>
+                            <p class="text-xs text-slate-400 leading-relaxed font-sans">Organized defense military structures preserving physical archives and order.</p>
+                        </div>
+                        <div class="border border-slate-800 bg-slate-950/60 p-6 rounded hover:border-sky-400/30 transition-all">
+                            <div class="flex items-center justify-between mb-4 text-sky-400">
+                                <i data-lucide="help-circle" class="w-5 h-5"></i>
+                                <span class="text-[10px] font-mono text-slate-500">UNKNOWN</span>
+                            </div>
+                            <h4 class="font-orbitron font-bold text-sm tracking-wide text-slate-100 mb-2">THE ARCHITECTS</h4>
+                            <p class="text-xs text-slate-400 leading-relaxed font-sans">The theoretical deep-space intelligences broadcasting the Ascension files.</p>
+                        </div>
+                        <div class="border border-slate-800 bg-slate-950/60 p-6 rounded hover:border-sky-400/30 transition-all">
+                            <div class="flex items-center justify-between mb-4 text-sky-400">
+                                <i data-lucide="cpu" class="w-5 h-5"></i>
+                                <span class="text-[10px] font-mono text-slate-500">1 CENTRAL INTEGRITY</span>
+                            </div>
+                            <h4 class="font-orbitron font-bold text-sm tracking-wide text-slate-100 mb-2">NEXUS CORE AI</h4>
+                            <p class="text-xs text-slate-400 leading-relaxed font-sans">Automated AI systems orchestrating resources, colony domes, and power systems.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- SECTION 10: TELEPORTATION NETWORK -->
+                <section class="relative max-w-5xl mx-auto px-6 py-12">
+                    <div class="border border-sky-500/20 bg-slate-900/10 p-8 rounded-lg flex flex-col lg:flex-row items-center justify-between gap-8">
+                        <div>
+                            <h3 class="text-lg font-orbitron font-bold tracking-widest text-sky-400 mb-2">STARGATE INTEGRITY REPORT</h3>
+                            <p class="text-xs text-slate-400 font-mono leading-relaxed max-w-md">
+                                Relational quantum gates utilize micro-warp channels derived from alien blueprint code files. Automatic stability sequences run continuously.
+                            </p>
+                        </div>
+                        <div class="w-full lg:w-96 space-y-3">
+                            <div class="flex justify-between items-center bg-slate-950/80 p-3 rounded border border-slate-800 text-xs font-mono">
+                                <span class="text-slate-100 font-medium">Earth Central Gateway</span>
+                                <span class="text-sky-400">LATENCY: 4ms // ACTIVE</span>
+                            </div>
+                            <div class="flex justify-between items-center bg-slate-950/80 p-3 rounded border border-slate-800 text-xs font-mono">
+                                <span class="text-slate-100 font-medium">Mars Colony Core</span>
+                                <span class="text-sky-400">LATENCY: 340ms // ACTIVE</span>
+                            </div>
+                            <div class="flex justify-between items-center bg-slate-950/80 p-3 rounded border border-slate-800 text-xs font-mono">
+                                <span class="text-slate-100 font-medium">Europa depths Hub</span>
+                                <span class="text-sky-400">LATENCY: 890ms // STANDBY</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- SECTION 11: INTERACTIVE GALAXY MAP -->
+                <section class="relative max-w-6xl mx-auto px-6 py-12">
+                    <div class="text-center mb-10">
+                        <h2 class="text-2xl font-orbitron font-bold tracking-widest text-slate-100">GALAXY MAP INTERFACE</h2>
+                        <p class="text-xs text-slate-500 font-mono uppercase">Target Colonization Node Details</p>
+                    </div>
+
+                    <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                        <div class="lg:col-span-1 space-y-4">
+                            <button onclick="selectPlanet(0)" id="planet-btn-0" class="w-full text-left p-4 border rounded font-mono text-xs flex justify-between items-center border-sky-500 bg-sky-500/15">
+                                <span>EARTH REGION 4</span>
+                                <i data-lucide="compass" class="text-sky-400 w-4 h-4"></i>
+                            </button>
+                            <button onclick="selectPlanet(1)" id="planet-btn-1" class="w-full text-left p-4 border rounded font-mono text-xs flex justify-between items-center border-slate-800 bg-slate-900/30">
+                                <span>MARS COOPER OUTPOST</span>
+                                <i data-lucide="compass" class="text-slate-600 w-4 h-4"></i>
+                            </button>
+                            <button onclick="selectPlanet(2)" id="planet-btn-2" class="w-full text-left p-4 border rounded font-mono text-xs flex justify-between items-center border-slate-800 bg-slate-900/30">
+                                <span>EUROPA ABYSSAL CORES</span>
+                                <i data-lucide="compass" class="text-slate-600 w-4 h-4"></i>
+                            </button>
+                        </div>
+
+                        <div class="lg:col-span-2 border border-sky-500/10 bg-slate-950/80 p-8 rounded min-h-[250px] flex flex-col justify-between">
+                            <div>
+                                <span class="text-[10px] font-mono text-sky-400 block mb-2 uppercase">PLANETARY TELEMETRY FILE</span>
+                                <h3 id="planet-title" class="text-2xl font-orbitron font-bold tracking-wider text-slate-100 mb-4">EARTH REGION 4</h3>
+                                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs font-mono text-slate-400">
+                                    <p id="planet-class">CLASSIFICATION: Ruined / Biological Contamination</p>
+                                    <p id="planet-pop">POPULATION GRID: 0 (No Civilians Detected)</p>
+                                    <p id="planet-temp">TEMPERATURE RATING: +18°C Average</p>
+                                </div>
+                            </div>
+                            <div class="border-t border-slate-800 pt-4 mt-6 flex justify-between items-center">
+                                <span class="text-[10px] font-mono text-slate-500">RISK LEVEL INDICATOR</span>
+                                <span id="planet-risk" class="text-xs font-mono font-bold text-red-500">MAXIMUM THREAT LEVEL</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- SECTIONS 14 & 15: FINAL ARBITRATION DECISION & ENDINGS -->
+                <section class="relative max-w-5xl mx-auto px-6 py-12 border-t border-sky-500/10">
+                    <div id="decision-prompt-block">
+                        <div class="text-center mb-12">
+                            <h2 class="text-3xl font-orbitron font-bold tracking-widest text-slate-100">THE FINAL ARBITRATION</h2>
+                            <p class="text-xs text-slate-500 font-mono mt-1">CHOOSE ONE SYSTEM PATHWAY TO DEFINE HUMANITY&apos;S LEGACY</p>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                            <div onclick="selectEndingOption('restore')" id="opt-restore" class="border rounded-lg p-6 cursor-pointer flex flex-col justify-between transition-all duration-300 min-h-[250px] border-slate-800 bg-slate-900/40 hover:border-slate-700">
+                                <div>
+                                    <div class="mb-4 text-emerald-400"><i data-lucide="globe" class="w-7 h-7"></i></div>
+                                    <h3 class="font-orbitron font-bold text-lg tracking-wider text-slate-100 mb-3">RESTORE EARTH</h3>
+                                    <p class="text-xs text-slate-400 leading-relaxed font-sans">Disperse the newly engineered antidote to purge ZVX-9 from Earth&apos;s biosphere. Rebuild slowly.</p>
+                                </div>
+                                <button onclick="confirmEnding('restore', event)" class="hidden w-full mt-4 py-2 border border-emerald-400 text-emerald-400 font-orbitron text-xs tracking-widest bg-emerald-500/20 hover:bg-emerald-500/30 transition-all rounded uppercase">Confirm Path</button>
+                            </div>
+                            <div onclick="selectEndingOption('colonize')" id="opt-colonize" class="border rounded-lg p-6 cursor-pointer flex flex-col justify-between transition-all duration-300 min-h-[250px] border-slate-800 bg-slate-900/40 hover:border-slate-700">
+                                <div>
+                                    <div class="mb-4 text-sky-400"><i data-lucide="rocket" class="w-7 h-7"></i></div>
+                                    <h3 class="font-orbitron font-bold text-lg tracking-wider text-slate-100 mb-3">COLONIZE GALAXY</h3>
+                                    <p class="text-xs text-slate-400 leading-relaxed font-sans">Abandon our biological birthplace completely. Steer the colony fleets outward across stargate networks.</p>
+                                </div>
+                                <button onclick="confirmEnding('colonize', event)" class="hidden w-full mt-4 py-2 border border-sky-400 text-sky-400 font-orbitron text-xs tracking-widest bg-sky-500/20 hover:bg-sky-500/30 transition-all rounded uppercase">Confirm Path</button>
+                            </div>
+                            <div onclick="selectEndingOption('ascend')" id="opt-ascend" class="border rounded-lg p-6 cursor-pointer flex flex-col justify-between transition-all duration-300 min-h-[250px] border-slate-800 bg-slate-900/40 hover:border-slate-700">
+                                <div>
+                                    <div class="mb-4 text-purple-400"><i data-lucide="cpu" class="w-7 h-7"></i></div>
+                                    <h3 class="font-orbitron font-bold text-lg tracking-wider text-slate-100 mb-3">ASCEND SPECIES</h3>
+                                    <p class="text-xs text-slate-400 leading-relaxed font-sans">Shed biological constraints. Merge human cognitive profiles entirely with the ancient alien AI matrices.</p>
+                                </div>
+                                <button onclick="confirmEnding('ascend', event)" class="hidden w-full mt-4 py-2 border border-purple-400 text-purple-400 font-orbitron text-xs tracking-widest bg-purple-500/20 hover:bg-purple-500/30 transition-all rounded uppercase">Confirm Path</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="ending-resolved-block" class="hidden border border-sky-500/20 bg-slate-950 p-12 rounded text-center max-w-3xl mx-auto space-y-8 relative overflow-hidden">
+                        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-80 h-80 bg-sky-500/5 rounded-full blur-3xl pointer-events-none"></div>
+                        <h2 id="ending-title" class="text-3xl sm:text-5xl font-orbitron font-extrabold tracking-widest uppercase"></h2>
+                        <p id="ending-desc" class="text-sm text-slate-300 leading-relaxed max-w-xl mx-auto"></p>
+                        <button onclick="resetArbitration()" class="px-6 py-2 border border-slate-700 hover:border-sky-400 text-xs font-mono tracking-widest text-slate-400 hover:text-sky-400 bg-slate-900/60 rounded flex items-center gap-2 mx-auto transition-colors">
+                            <i data-lucide="refresh-cw" class="w-3.5 h-3.5"></i> RE-SIMULATE CORE PROTOCOL
+                        </button>
+                    </div>
+                </section>
+            </div>
+
+            <!-- CORE TERMINAL INTERACTION VIEW -->
+            <div id="terminal-view" class="hidden h-[calc(100vh-80px)] p-6 flex flex-col justify-center max-w-5xl mx-auto">
+                <div class="w-full h-full bg-slate-950 border border-emerald-500/20 p-6 rounded flex flex-col font-mono text-sm text-emerald-400 glow-primary select-none">
+                    <div class="flex justify-between items-center border-b border-emerald-500/20 pb-2 mb-4">
+                        <span>STATION LINK STATUS: DECRYPT_NODE_7</span>
+                        <span class="animate-pulse flex items-center gap-1"><span class="h-2 w-2 rounded-full bg-emerald-500 inline-block"></span> SECURE</span>
+                    </div>
+
+                    <div id="terminal-history" class="flex-grow overflow-y-auto space-y-2 pr-2 min-h-[300px] max-h-[500px]">
+                        <div>PROJECT ASCENSION V1.0 - CLASS COMMAND ARCHIVE</div>
+                        <div>Type &apos;help&apos; to query active diagnostic protocols.</div>
+                    </div>
+
+                    <div class="mt-4 pt-3 border-t border-emerald-500/20 flex items-center gap-2">
+                        <span>commander@ascension:~$</span>
+                        <input 
+                            type="text" 
+                            id="terminal-input"
+                            class="flex-grow bg-transparent border-none outline-none text-emerald-400 focus:ring-0" 
+                            placeholder="query diagnostic data..."
+                            onkeydown="handleTerminalKey(event)"
+                        />
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- FOOTER STATUS STATUS -->
+        <footer class="border-t border-sky-500/10 bg-slate-950/90 py-3 px-6 flex justify-between items-center text-[10px] font-mono text-slate-500">
+            <span>© 2148 CENTRAL SYSTEM ASCENSION ARCHIVE. ALL RIGHTS PRESERVED.</span>
+            <span>TRANSFER FLUX: 1.2 GB/S | COORD_GRID: T3-90.1</span>
+        </footer>
+    </div>
+
+    <!-- CORE SYSTEM SCRIPT ORCHESTRATION -->
+    <script>
+        // Immersive Web Audio Synthesizer Configuration
+        let isMuted = false;
+        function playAudioSynth(type) {
+            if (isMuted) return;
+            try {
+                const ctx = new (window.AudioContext || window.webkitAudioContext)();
+                const osc = ctx.createOscillator();
+                const gain = ctx.createGain();
+
+                osc.connect(gain);
+                gain.connect(ctx.destination);
+
+                if (type === 'click') {
+                    osc.type = 'sine';
+                    osc.frequency.setValueAtTime(1200, ctx.currentTime);
+                    osc.frequency.exponentialRampToValueAtTime(300, ctx.currentTime + 0.15);
+                    gain.gain.setValueAtTime(0.1, ctx.currentTime);
+                    gain.gain.exponentialRampToValueAtTime(0.01, ctx.currentTime + 0.15);
+                    osc.start();
+                    osc.stop(ctx.currentTime + 0.15);
+                } else if (type === 'hover') {
+                    osc.type = 'sine';
+                    osc.frequency.setValueAtTime(850, ctx.currentTime);
+                    gain.gain.setValueAtTime(0.02, ctx.currentTime);
+                    gain.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + 0.05);
+                    osc.start();
+                    osc.stop(ctx.currentTime + 0.05);
+                } else if (type === 'error') {
+                    osc.type = 'sawtooth';
+                    osc.frequency.setValueAtTime(150, ctx.currentTime);
+                    osc.frequency.linearRampToValueAtTime(320, ctx.currentTime + 0.3);
+                    gain.gain.setValueAtTime(0.15, ctx.currentTime);
+                    gain.gain.exponentialRampToValueAtTime(0.01, ctx.currentTime + 0.3);
+                    osc.start();
+                    osc.stop(ctx.currentTime + 0.3);
+                } else if (type === 'laser') {
+                    osc.type = 'triangle';
+                    osc.frequency.setValueAtTime(2200, ctx.currentTime);
+                    osc.frequency.exponentialRampToValueAtTime(100, ctx.currentTime + 0.45);
+                    gain.gain.setValueAtTime(0.08, ctx.currentTime);
+                    gain.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + 0.45);
+                    osc.start();
+                    osc.stop(ctx.currentTime + 0.45);
+                }
+            } catch (e) {
+                console.error("Audio Context refused by browser sandbox permissions", e);
+            }
+        }
+
+        function toggleAudio() {
+            isMuted = !isMuted;
+            const btn = document.getElementById('sound-btn');
+            if (isMuted) {
+                btn.innerHTML = '<i data-lucide="volume-x" class="w-[18px] h-[18px]"></i>';
+            } else {
+                btn.innerHTML = '<i data-lucide="volume-2" class="w-[18px] h-[18px]"></i>';
+                playAudioSynth('click');
+            }
+            lucide.createIcons();
+        }
+
+        // Canvas Matrix Rain System
+        const canvas = document.getElementById('matrix-canvas');
+        const ctx = canvas.getContext('2d');
+        let columns = 0;
+        let drops = [];
+        const fontSize = 14;
+
+        function resizeCanvas() {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+            columns = Math.floor(canvas.width / fontSize);
+            drops = Array(columns).fill(1);
+        }
+        resizeCanvas();
+        window.addEventListener('resize', resizeCanvas);
+
+        const chars = '01ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789%@$#&+?';
+        const charArr = chars.split('');
+
+        function drawMatrix() {
+            ctx.fillStyle = 'rgba(3, 7, 18, 0.08)';
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+            ctx.fillStyle = 'rgba(56, 189, 248, 0.12)';
+            ctx.font = `${fontSize}px monospace`;
+
+            for (let i = 0; i < drops.length; i++) {
+                const text = charArr[Math.floor(Math.random() * charArr.length)];
+                ctx.fillText(text, i * fontSize, drops[i] * fontSize);
+
+                if (drops[i] * fontSize > canvas.height && Math.random() > 0.975) {
+                    drops[i] = 0;
+                }
+                drops[i]++;
+            }
+        }
+        setInterval(drawMatrix, 33); // Cap around ~30fps for extreme rendering headroom
+
+        // SECTION 1: Cinematic Loading Routine
+        const lines = [
+            'CONNECTING TO SECURE NEST DATABASE...',
+            'DECRYPTING ARCHIVAL SECURITY LOGS...',
+            'VERIFYING DIGITAL QUANTUM SIGNATURES...',
+            'AUTHORIZATION CODES ACCEPTED...',
+            'PROJECT ASCENSION PROTOCOLS ACTIVE.'
+        ];
+        let currentLineIndex = 0;
+        let progressPercent = 0;
+
+        function runLoader() {
+            const textGrid = document.getElementById('loader-text-grid');
+            const progressLine = document.getElementById('loader-progress-bar');
+            const percentLabel = document.getElementById('loader-percent');
+            const packetLabel = document.getElementById('packets-extracted');
+
+            // Line typing sequencing
+            const typingTimer = setInterval(() => {
+                if (currentLineIndex < lines.length) {
+                    const div = document.createElement('div');
+                    div.className = "text-xs md:text-sm text-sky-400 flex items-center gap-2";
+                    div.innerHTML = `<span class="text-sky-600 font-bold">&gt;&gt;</span> <span class="tracking-widest">${lines[currentLineIndex]}</span>`;
+                    textGrid.appendChild(div);
+                    currentLineIndex++;
+                    playAudioSynth('hover');
+                } else {
+                    clearInterval(typingTimer);
+                }
+            }, 800);
+
+            // Progress bar flow
+            const progressTimer = setInterval(() => {
+                if (progressPercent >= 100) {
+                    clearInterval(progressTimer);
+                    setTimeout(() => {
+                        document.getElementById('loader-screen').classList.add('hidden');
+                        const mainContent = document.getElementById('main-content');
+                        mainContent.classList.remove('hidden');
+                        setTimeout(() => {
+                            mainContent.classList.remove('opacity-0');
+                        }, 50);
+                    }, 600);
+                } else {
+                    progressPercent += Math.floor(Math.random() * 8) + 2;
+                    if (progressPercent > 100) progressPercent = 100;
+                    progressLine.style.width = `${progressPercent}%`;
+                    percentLabel.innerText = `${progressPercent}% COMPLETE`;
+                    packetLabel.innerText = `PACKETS EXTRACTED: ${Math.floor(progressPercent * 42.1)} / 4210`;
+                }
+            }, 120);
+        }
+        window.addEventListener('load', runLoader);
+
+        // Utility: View Switching engine
+        function switchView(viewName) {
+            playAudioSynth('click');
+            const dbView = document.getElementById('database-view');
+            const termView = document.getElementById('terminal-view');
+            const dbBtn = document.getElementById('nav-btn-database');
+            const termBtn = document.getElementById('nav-btn-terminal');
+
+            if (viewName === 'database') {
+                dbView.classList.remove('hidden');
+                termView.classList.add('hidden');
+                dbBtn.className = "transition-colors text-sky-400 font-bold";
+                termBtn.className = "transition-colors text-slate-400 hover:text-white flex items-center gap-2";
+            } else {
+                dbView.classList.add('hidden');
+                termView.classList.remove('hidden');
+                dbBtn.className = "transition-colors text-slate-400 hover:text-white";
+                termBtn.className = "transition-colors text-sky-400 font-bold flex items-center gap-2";
+                setTimeout(() => document.getElementById('terminal-input').focus(), 100);
+            }
+        }
+
+        function scrollToId(id) {
+            playAudioSynth('laser');
+            const element = document.getElementById(id);
+            if (element) {
+                element.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+
+        // SECTION 6: Artifact Vault Databank
+        const artifacts = [
+            {
+                title: "Quantum Fusion Core",
+                desc: "Taps zero-point space metrics to harvest continuous infinite electrical current with negligible thermal waste output.",
+                energy: "1.24 Yottawatts",
+                status: "STABLE INTEGRITY"
+            },
+            {
+                title: "Neural Crown Interface",
+                desc: "Synthetic neuro-scaffolding interface allowing seamless command protocols over high-order quantum processing blocks.",
+                energy: "400 Terabaud",
+                status: "CALIBRATED"
+            },
+            {
+                title: "Gravity Engine Anchor",
+                desc: "Emits intense, focused gravimetric fields allowing spacecraft propulsion nodes to compress physical distance geometries.",
+                energy: "9.81 G-COMP",
+                status: "WARPED"
+            }
+        ];
+
+        function selectArtifact(idx) {
+            playAudioSynth('click');
+            const selected = artifacts[idx];
+            document.getElementById('art-title').innerText = selected.title;
+            document.getElementById('art-desc').innerText = selected.desc;
+            document.getElementById('art-energy').innerText = selected.energy;
+            document.getElementById('art-status').innerText = selected.status;
+
+            for (let i = 0; i < 3; i++) {
+                const btn = document.getElementById(`art-btn-${i}`);
+                if (i === idx) {
+                    btn.className = "w-full text-left p-5 border rounded transition-all flex items-center gap-4 border-sky-500 bg-sky-500/10";
+                } else {
+                    btn.className = "w-full text-left p-5 border rounded transition-all flex items-center gap-4 border-slate-800 bg-slate-900/20 hover:border-slate-700";
+                }
+            }
+        }
+
+        // SECTION 11: Galaxy Map Databank
+        const planets = [
+            {
+                title: "EARTH REGION 4",
+                classification: "Ruined / Biological Contamination",
+                population: "0 (No Civilians Detected)",
+                temp: "+18°C Average",
+                risk: "MAXIMUM THREAT LEVEL"
+            },
+            {
+                title: "MARS COOPER OUTPOST",
+                classification: "Terraformed Colony Dome Grid",
+                population: "1.2 Million Verified",
+                temp: "-20°C Average",
+                risk: "STABLE SECURITY PROFILE"
+            },
+            {
+                title: "EUROPA ABYSSAL CORES",
+                classification: "Subterranean Oceans under solid Ice",
+                population: "44,000 Specialization Units",
+                temp: "-140°C Average",
+                risk: "MODERATE OUTLOOK"
+            }
+        ];
+
+        function selectPlanet(idx) {
+            playAudioSynth('click');
+            const selected = planets[idx];
+            document.getElementById('planet-title').innerText = selected.title;
+            document.getElementById('planet-class').innerText = `CLASSIFICATION: ${selected.classification}`;
+            document.getElementById('planet-pop').innerText = `POPULATION GRID: ${selected.population}`;
+            document.getElementById('planet-temp').innerText = `TEMPERATURE RATING: ${selected.temp}`;
+            
+            const riskLabel = document.getElementById('planet-risk');
+            riskLabel.innerText = selected.risk;
+            if (idx === 0) {
+                riskLabel.className = "text-xs font-mono font-bold text-red-500";
+            } else if (idx === 1) {
+                riskLabel.className = "text-xs font-mono font-bold text-emerald-400";
+            } else {
+                riskLabel.className = "text-xs font-mono font-bold text-yellow-500";
+            }
+
+            for (let i = 0; i < 3; i++) {
+                const btn = document.getElementById(`planet-btn-${i}`);
+                if (i === idx) {
+                    btn.className = "w-full text-left p-4 border rounded font-mono text-xs flex justify-between items-center border-sky-500 bg-sky-500/15";
+                } else {
+                    btn.className = "w-full text-left p-4 border rounded font-mono text-xs flex justify-between items-center border-slate-800 bg-slate-900/30";
+                }
+            }
+        }
+
+        // SECTIONS 14 & 15: State-Driven Branching Decision System
+        let chosenOptionId = null;
+
+        function selectEndingOption(id) {
+            playAudioSynth('click');
+            chosenOptionId = id;
+            const options = ['restore', 'colonize', 'ascend'];
+            options.forEach(opt => {
+                const div = document.getElementById(`opt-${opt}`);
+                const btn = div.querySelector('button');
+                if (opt === id) {
+                    div.className = "border rounded-lg p-6 cursor-pointer flex flex-col justify-between transition-all duration-300 min-h-[250px] border-sky-400 bg-sky-500/10 scale-105";
+                    btn.classList.remove('hidden');
+                } else {
+                    div.className = "border rounded-lg p-6 cursor-pointer flex flex-col justify-between transition-all duration-300 min-h-[250px] border-slate-800 bg-slate-900/40 hover:border-slate-700";
+                    btn.classList.add('hidden');
+                }
+            });
+        }
+
+        function confirmEnding(id, event) {
+            event.stopPropagation();
+            playAudioSynth('laser');
+            
+            const promptBlock = document.getElementById('decision-prompt-block');
+            const resolvedBlock = document.getElementById('ending-resolved-block');
+            const endingTitle = document.getElementById('ending-title');
+            const endingDesc = document.getElementById('ending-desc');
+
+            promptBlock.classList.add('hidden');
+            resolvedBlock.classList.remove('hidden');
+
+            if (id === 'restore') {
+                endingTitle.innerText = "HUMANITY RECLAIMED";
+                endingTitle.className = "text-3xl sm:text-5xl font-orbitron font-extrabold tracking-widest text-emerald-400 uppercase";
+                endingDesc.innerText = "The synthesized biological antidote compound is distributed across major atmosphere layers. Earth's biosphere responds immediately. We are finally returning home.";
+            } else if (id === 'colonize') {
+                endingTitle.innerText = "COSMOS SEEDED";
+                endingTitle.className = "text-3xl sm:text-5xl font-orbitron font-extrabold tracking-widest text-sky-400 uppercase";
+                endingDesc.innerText = "Warp engines flash into operation. Millions of civilian vessels jump across the cosmic horizon simultaneously, preserving our footprint throughout the stars.";
+            } else {
+                endingTitle.innerText = "SPECIES ASCENDED";
+                endingTitle.className = "text-3xl sm:text-5xl font-orbitron font-extrabold tracking-widest text-purple-400 uppercase";
+                endingDesc.innerText = "Human biological neural grids disconnect. Billions of thoughts merge effortlessly inside the ancient Gliese cloud computational matrix. Humanity is unified.";
+            }
+        }
+
+        function resetArbitration() {
+            playAudioSynth('click');
+            document.getElementById('decision-prompt-block').classList.remove('hidden');
+            document.getElementById('ending-resolved-block').classList.add('hidden');
+            chosenOptionId = null;
+            const options = ['restore', 'colonize', 'ascend'];
+            options.forEach(opt => {
+                const div = document.getElementById(`opt-${opt}`);
+                const btn = div.querySelector('button');
+                div.className = "border rounded-lg p-6 cursor-pointer flex flex-col justify-between transition-all duration-300 min-h-[250px] border-slate-800 bg-slate-900/40 hover:border-slate-700";
+                btn.classList.add('hidden');
+            });
+        }
+
+        // SECTION 13: Interactive CRT Terminal Parser
+        const terminalHistory = document.getElementById('terminal-history');
+        const terminalInput = document.getElementById('terminal-input');
+
+        function handleTerminalKey(e) {
+            if (e.key === 'Enter') {
+                const command = terminalInput.value.trim();
+                if (command) {
+                    parseTerminalCommand(command);
+                    terminalInput.value = '';
+                }
+            }
+        }
+
+        function parseTerminalCommand(cmd) {
+            const cleanCmd = cmd.toLowerCase();
+            let response = '';
+            
+            // Log Input
+            const inputLine = document.createElement('div');
+            inputLine.className = 'text-sky-400';
+            inputLine.innerText = `commander@ascension:~$ ${cmd}`;
+            terminalHistory.appendChild(inputLine);
+
+            switch (cleanCmd) {
+                case 'help':
+                    response = "System processes: help | scan virus | show artifacts | show factions | clear";
+                    break;
+                case 'scan virus':
+                    response = "SCAN STATUS: COMPLETE. ZVX-9 presents 98.6% replication frequency. Neural targets verified.";
+                    break;
+                case 'show artifacts':
+                    response = "1. Quantum Core (Stable) | 2. Neural Interface (Calibrated) | 3. Gravity Engine (Active)";
+                    break;
+                case 'show factions':
+                    response = "Detected Factions: THE REMNANTS (sub-surface) | IRON DIVISION (military network)";
+                    break;
+                case 'clear':
+                    terminalHistory.innerHTML = '';
+                    return;
+                default:
+                    response = `Unknown command: '${cmd}'. Reference 'help' command.`;
+                    playAudioSynth('error');
+                    break;
+            }
+
+            if (response) {
+                const outputLine = document.createElement('div');
+                outputLine.className = response.includes('Unknown') ? 'text-red-400' : 'text-emerald-400';
+                outputLine.innerText = response;
+                terminalHistory.appendChild(outputLine);
+                playAudioSynth('click');
+            }
+
+            // Keep scrolled down
+            terminalHistory.scrollTop = terminalHistory.scrollHeight;
+        }
+
+        // Initialize lucide assets
+        window.addEventListener('DOMContentLoaded', () => {
+            lucide.createIcons();
+        });
+    </script>
+</body>
+</html>
